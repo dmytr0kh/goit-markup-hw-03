@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,75 +17,82 @@
   <body>
     <!-- Header -->
     <header class="site-head">
-      <nav class="site-map">
-        <a class="site-logo" href="./index.html"
-          ><span class="site-logo-web">Web</span>Studio</a
-        >
-        <ul class="site-list">
-          <li class="list">
-            <a class="site-list-item link-current" href="./index.html"
-              >Студія</a
-            >
-          </li>
-          <li class="list">
-            <a class="site-list-item" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="list">
-            <a class="site-list-item" href="./#">Контакти</a>
-          </li>
-        </ul>
-        <ul class="head-contacts">
-          <li class="list">
-            <a class="head-mail" href="#">info@devstudio.com</a>
-          </li>
-          <li class="list">
-            <a class="head-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="site-map">
+          <a class="site-logo" href="./index.html"
+            ><span class="site-logo-web">Web</span>Studio</a
+          >
+          <ul class="site-list">
+            <li class="list">
+              <a class="site-list-item link-current" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="list">
+              <a class="site-list-item" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="list">
+              <a class="site-list-item" href="./#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="head-contacts">
+            <li class="list">
+              <a class="head-mail" href="#">info@devstudio.com</a>
+            </li>
+            <li class="list">
+              <a class="head-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+      <div class="container">
+        <section class="hero section">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button">Замовити послугу</button>
+      </div>
       </section>
       <!-- Benefits -->
-      <section class="benefits">
-        <h2 class="benefits-title">Особливості нашої компанії</h2>
-        <ul class="benefits-list">
-          <li class="list">
-            <h3 class="benefits-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="benefits-list-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="list">
-            <h3 class="benefits-list-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="benefits-list-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="list">
-            <h3 class="benefits-list-title">ПЛАНУВАННЯ</h3>
-            <p class="benefits-list-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="list">
-            <h3 class="benefits-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="benefits-list-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="benefits section">
+        <div class="container">
+          <h2 class="benefits-title">Особливості нашої компанії</h2>
+          <ul class="benefits-list">
+            <li class="list">
+              <h3 class="benefits-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-list-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="list">
+              <h3 class="benefits-list-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-list-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне
+                у себе.
+              </p>
+            </li>
+            <li class="list">
+              <h3 class="benefits-list-title">ПЛАНУВАННЯ</h3>
+              <p class="benefits-list-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="list">
+              <h3 class="benefits-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-list-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових
+                завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Operation -->
-      <section class="operation">
+      <section class="operation section">
+        <div class="container"> 
         <h2 class="operation-title">Чим ми займаємося</h2>
         <ul class="operation-list">
           <li class="list">
@@ -109,9 +117,11 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- Team -->
-      <section class="team">
+      <section class="team section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="list">
@@ -159,10 +169,12 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="site-floor">
+      <div class="container">
       <a class="floor-logo" href="./index.html"
         ><span class="site-logo-web">Web</span>Studio</a
       >
@@ -187,6 +199,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
