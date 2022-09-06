@@ -6,32 +6,41 @@
   --secondary-text-color: #757575;
   --blue-color: #2196f3;
 }
+
 /* body */
+
 body {
   font-family: "Roboto", sans-serif;
-  /* width: 1600px; */
   background-color: var(--main-page-color);
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
 /* container */
+
 .container {
-width: 1200px;
+  width: 1200px;
 }
+
 /* section */
+
 .section {
-padding: 94px 0px; 
+  padding: 94px 0px;
 }
+
 /* index and portfolio both */
+
 .list {
   list-style: none;
 }
+
 /* header */
-.site-head {
+
+.page-header {
   background-color: var(--main-page-color);
 }
-.site-logo {
+.header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -39,59 +48,61 @@ padding: 94px 0px;
   color: var(--main-text-color);
   text-decoration: none;
 }
-.site-logo:hover {
+.header-logo:hover {
   background-color: var(--main-page-color);
 }
-.site-logo:focus {
+.header-logo:focus {
   background-color: var(--main-page-color);
 }
-.site-logo-web {
+.web-part {
   color: var(--blue-color);
 }
-.site-list-item {
+.nav-item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
 }
-.site-list-item:hover {
+.nav-item:hover {
   color: var(--blue-color);
 }
-.site-list-item:focus {
+.nav-item:focus {
   color: var(--main-text-color);
 }
 .link-current {
   color: var(--blue-color);
 }
-.head-mail {
+.nav-mail {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.head-mail:hover {
+.nav-mail:hover {
   color: var(--blue-color);
 }
-.head-mail :focus {
+.nav-mail:focus {
   color: var(--main-text-color);
 }
-.head-phone {
+.nav-phone {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.head-phone:hover {
+.nav-phone:hover {
   color: var(--blue-color);
 }
-.head-phone:focus {
+.nav-phone:focus {
   color: var(--main-text-color);
 }
+
 /* footer */
-.site-floor {
+
+.page-floor {
   background-color: var(--secondary-page-color);
 }
 .floor-logo {
@@ -108,16 +119,16 @@ padding: 94px 0px;
 .floor-logo:focus {
   background-color: var(--secondary-page-color);
 }
-.floor-location {
+.location {
   font-style: normal;
   line-height: 1.71;
   color: var(--main-page-color);
   text-decoration: none;
 }
-.floor-location:hover {
+.location:hover {
   color: var(--blue-color);
 }
-.floor-location:focus {
+.location:focus {
   color: var(--secondary-text-color);
 }
 .floor-mail {
@@ -144,9 +155,11 @@ padding: 94px 0px;
 .floor-phone:focus {
   color: var(--secondary-text-color);
 }
+
 /* index.html  */
-/* Index Main */
+
 /* Hero */
+
 .hero {
   background-color: var(--secondary-page-color);
 }
@@ -183,22 +196,26 @@ padding: 94px 0px;
   border: 1px solid var(--blue-color);
   border-radius: 4px;
 }
+
 /* Benefits  */
+
 .benefits-title {
   visibility: hidden;
 }
-.benefits-list-title {
+.benefits-caption {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-text-color);
 }
-.benefits-list-text {
+.benefits-text {
   line-height: 1.14;
   color: var(--secondary-text-color);
 }
+
 /* Operation */
+
 .operation {
   background-color: var(--main-page-color);
 }
@@ -208,7 +225,9 @@ padding: 94px 0px;
   line-height: 1.16;
   color: var(--main-text-color);
 }
+
 /* Team */
+
 .team {
   background-color: var(--third-page-color);
 }
@@ -218,23 +237,25 @@ padding: 94px 0px;
   line-height: 1.16;
   color: var(--main-text-color);
 }
-.team-list-item-title {
+.team-caption {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--main-text-color);
 }
-.team-list-item-text {
+.team-text {
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
 }
+
 /* portfolio.html  */
-/*  Portfolio Main  */
+
+/* Projects */
+
 .project {
   background-color: var(--main-page-color);
 }
-/* Projects */
 .projects-title {
   visibility: hidden;
 }
@@ -268,14 +289,14 @@ padding: 94px 0px;
 .projects-title {
   visibility: hidden;
 }
-.project-list-item-title {
+.project-caption {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
-.project-list-item-text {
+.project-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
