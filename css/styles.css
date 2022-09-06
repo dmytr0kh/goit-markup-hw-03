@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --main-page-color: #ffffff;
   --secondary-page-color: #2f303a;
@@ -15,6 +25,21 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  /* padding: 0; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* container */
@@ -40,6 +65,24 @@ body {
 .page-header {
   background-color: var(--main-page-color);
 }
+
+.page-nav,
+.nav-list,
+.nav-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* .nav-list {
+  padding: 32px 50px 32px 50px ;
+} */
+
+/* .nav-contacts {
+  display: flex;
+  flex-wrap: nowrap;
+} */
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -202,6 +245,13 @@ body {
 .benefits-title {
   visibility: hidden;
 }
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .benefits-caption {
   font-size: 14px;
   font-weight: 700;
@@ -226,17 +276,31 @@ body {
   color: var(--main-text-color);
 }
 
+.operation-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 /* Team */
 
 .team {
   background-color: var(--third-page-color);
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-text-color);
 }
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .team-caption {
   font-weight: 500;
   font-size: 16px;
