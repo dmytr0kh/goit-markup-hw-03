@@ -14,10 +14,8 @@ html {
   --third-page-color: #f5f4fa;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
-  --blue-color: #2196f3;
+  --accent-color: #2196f3;
 }
-
-/* body */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -25,6 +23,17 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1,
@@ -74,9 +83,7 @@ img {
   flex-wrap: nowrap;
 }
 
-/* .nav-list {
-  padding: 32px 50px 32px 50px ;
-} */
+
 
 /* .nav-contacts {
   display: flex;
@@ -90,6 +97,7 @@ img {
   line-height: 1.19;
   color: var(--main-text-color);
   text-decoration: none;
+  padding: 24px 93px 25px 215px;
 }
 .header-logo:hover {
   background-color: var(--main-page-color);
@@ -98,8 +106,13 @@ img {
   background-color: var(--main-page-color);
 }
 .web-part {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
+
+/* .nav-item {
+  margin: 32px 50px 32px 50px ;
+} */
+
 .nav-item {
   font-weight: 500;
   line-height: 1.14;
@@ -108,13 +121,13 @@ img {
   text-decoration: none;
 }
 .nav-item:hover {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .nav-item:focus {
   color: var(--main-text-color);
 }
 .link-current {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .nav-mail {
   font-weight: 500;
@@ -124,7 +137,7 @@ img {
   text-decoration: none;
 }
 .nav-mail:hover {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .nav-mail:focus {
   color: var(--main-text-color);
@@ -137,7 +150,7 @@ img {
   text-decoration: none;
 }
 .nav-phone:hover {
-  color: var(--blue-color);
+  color: var(---accent-color);
 }
 .nav-phone:focus {
   color: var(--main-text-color);
@@ -168,8 +181,15 @@ img {
   color: var(--main-page-color);
   text-decoration: none;
 }
+
+/* .location-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+} */
+
 .location:hover {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .location:focus {
   color: var(--secondary-text-color);
@@ -181,7 +201,7 @@ img {
   text-decoration: none;
 }
 .floor-mail:hover {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .floor-mail:focus {
   color: var(--secondary-text-color);
@@ -193,7 +213,7 @@ img {
   text-decoration: none;
 }
 .floor-phone:hover {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .floor-phone:focus {
   color: var(--secondary-text-color);
@@ -222,29 +242,25 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-page-color);
-  background-color: var(--blue-color);
-  border: var(--blue-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
   border-radius: 4px;
 }
 .button:hover {
   color: var(--main-page-color);
-  background-color: var(--blue-color);
-  border: 1px solid var(--blue-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 .button:focus {
   color: var(--main-page-color);
-  background-color: var(--blue-color);
-  border: var(--blue-color);
-  border: 1px solid var(--blue-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
 /* Benefits  */
-
-.benefits-title {
-  visibility: hidden;
-}
 
 .benefits-list {
   display: flex;
@@ -320,12 +336,15 @@ img {
 .project {
   background-color: var(--main-page-color);
 }
-.projects-title {
-  visibility: hidden;
-}
+
 .projects-buttons {
   background-color: var(--main-page-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
+
 .project-btn {
   cursor: pointer;
   font-family: inherit;
@@ -339,20 +358,28 @@ img {
 }
 .project-btn:hover {
   color: var(--main-page-color);
-  background-color: var(--blue-color);
-  border: var(--blue-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
   border: 1px solid var(--main-text-color);
   border-radius: 4px;
 }
 .project-btn:focus {
   color: var(--main-page-color);
-  background-color: var(--blue-color);
+  background-color: var(--accent-color);
   border: 1px solid var(--main-text-color);
   border-radius: 4px;
 }
 .projects-title {
   visibility: hidden;
 }
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .project-caption {
   font-weight: 700;
   font-size: 18px;
