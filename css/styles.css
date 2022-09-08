@@ -43,6 +43,7 @@ ul,
 p {
   margin: 0;
   padding: 0;
+  outline: 1px solid tomato;
 }
 
 img {
@@ -51,11 +52,19 @@ img {
   height: auto;
 }
 
+a,
+button,
+li {
+  outline: 1px solid tomato;
+}
+
 /* container */
 
 .container {
   width: 1200px;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
 }
 
 /* section */
@@ -77,6 +86,10 @@ img {
   background-color: var(--main-page-color);
 }
 
+.page-nav {
+  display: flex;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -84,8 +97,13 @@ img {
   line-height: 1.19;
   color: var(--main-text-color);
   text-decoration: none;
+
   /* padding: 24px 93px 25px 215px; */
-  /* justify-content: flex-start; */
+
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
+  justify-content: flex-start;
 }
 
 .header-logo:hover,
@@ -97,12 +115,29 @@ img {
   color: var(--accent-color);
 }
 
+.nav-list {
+  display: inherit;
+  flex-direction: row;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.nav-list:not(:last-child) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .nav-item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+  margin-right: 50px;
+  display: inline-block;
 }
 
 .nav-item:hover {
@@ -117,12 +152,27 @@ img {
   color: var(--accent-color);
 }
 
+.contacts-list {
+  display: inherit;
+  flex-direction: row;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 344px;
+  margin-left: 0;
+}
+
+.contacts-list:not(:last-child) {
+  margin-right: 0;
+}
+
 .nav-mail {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
+  margin-left: 0;
+  margin-right: 50px;
 }
 
 .nav-mail:hover {
@@ -139,6 +189,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
+  margin-right: 0;
 }
 
 .nav-phone:hover {
@@ -155,6 +206,13 @@ img {
   background-color: var(--secondary-page-color);
 }
 
+.floor {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .floor-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -162,11 +220,18 @@ img {
   line-height: 1.19;
   color: var(--main-page-color);
   text-decoration: none;
+  /* padding-top: 60px; */
+  text-align: start;
 }
 
 .floor-logo:hover,
 .floor-logo:focus {
   background-color: var(--secondary-page-color);
+}
+
+.location-list {
+  margin-top: 20px;
+  /* padding-bottom: 60px; */
 }
 
 .location {
@@ -189,6 +254,7 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
   text-decoration: none;
+  margin-top: 9px;
 }
 
 .floor-mail:hover {
@@ -204,6 +270,7 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
   text-decoration: none;
+  margin-top: 9px;
 }
 
 .floor-phone:hover {
@@ -220,10 +287,13 @@ img {
 
 .hero {
   background-color: var(--secondary-page-color);
-  /* padding-left: 452px;
+  padding-left: 452px;
   padding-top: 200px;
   padding-right: 452px;
-  padding-bottom: 280px; */
+  padding-bottom: 200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* justify-content: center; */
 }
 
 .hero-title {
@@ -233,8 +303,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-page-color);
-  /* width: 696px;
-  text-align: center; */
+  min-width: 696px;
+  text-align: center;
 }
 
 .button {
@@ -248,6 +318,7 @@ img {
   background-color: var(--accent-color);
   border: var(--accent-color);
   border-radius: 4px;
+  margin-top: 30px;
 }
 
 .button:hover {
@@ -269,8 +340,6 @@ img {
 
 .benefits-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .benefits-caption {
@@ -279,12 +348,22 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-right: 30px;
+}
+
+.benefits-caption:not(:last-child) {
+  margin-right: 0;
+}
+
+.benefits-text:not(:last-child) {
+  margin-right: 0;
 }
 
 .benefits-text {
   line-height: 1.14;
   color: var(--secondary-text-color);
   max-width: 270px;
+  margin-right: 30px;
 }
 
 /* Operation */
